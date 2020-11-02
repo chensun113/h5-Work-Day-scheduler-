@@ -11,7 +11,7 @@ function scrollFunction(){
 //Show Time
 var t = document.querySelector("#currentDay");
 var t2 = moment().format('LLLL');
-t.textContent = t2;
+// t.textContent = t2;
 //grey part
 var rowtext = ["9AM  ", "10AM", "11AM"];
 var todolist = document.getElementById("cc");//timelist;
