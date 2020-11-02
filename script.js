@@ -16,6 +16,8 @@ t.textContent = t2;
 var rowtext = ["9AM  ", "10AM", "11AM"];
 var todolist = document.getElementById("cc");//timelist;
 grey();
+red();
+greenpart();
 function grey() {
     // var todolist = document.getElementById("cc");//timelist;
 
@@ -92,7 +94,8 @@ function red(){
       var div_saveBtn = document.createElement("div");
       div_saveBtn.textContent = "                ";
       div_saveBtn.setAttribute("class", "saveBtn");
-  
+       var e2 = "Current hour";
+      textarea.textContent=e2;
       //blue button
       var div_description = document.createElement("button");
       div_description.setAttribute("class", "description");
