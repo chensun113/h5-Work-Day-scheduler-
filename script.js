@@ -65,4 +65,46 @@ function grey() {
     }//for-loop-3-grey
 }//function grey();
 function red(){
+     //whole content
+      var div_time_block = document.createElement("div");
+      div_time_block.setAttribute("class", "time-block");
+     
+      //line
+      var div_hour = document.createElement("div");
+      div_hour.setAttribute("class", "hour");
+     
+     var div_row = document.createElement("div");
+      div_row.setAttribute("class", "row");
+      
+      div_row.textContent = "12PM";//change text here
+      //only div_present to change text-area color from grey to red;
+      var div_past = document.createElement("div");
+      div_past.setAttribute("class", "present");
+      //textareas still the same as grey part
+      var textarea = document.createElement("textarea");
+      var size1 = 110;
+      textarea.setAttribute("name", "textarea");
+      textarea.setAttribute("cols", size1);
+      //blue part(white)
+      var div_saveBtn = document.createElement("div");
+      div_saveBtn.textContent = "                ";
+      div_saveBtn.setAttribute("class", "saveBtn");
+  
+      //blue button
+      var div_description = document.createElement("button");
+      div_description.setAttribute("class", "description");
+      // div_description.setAttribute(div_description, size2);
+      div_description.textContent=" ";
+      todolist.appendChild(div_time_block);
+
+      div_time_block.appendChild(div_hour);
+      div_time_block.appendChild(div_row);
+
+      div_row.appendChild(div_past);
+      div_row.appendChild(div_saveBtn);
+
+      div_past.appendChild(textarea);
+    
+
+      div_saveBtn.appendChild(div_description);
 }
