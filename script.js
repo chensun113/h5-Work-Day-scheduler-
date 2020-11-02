@@ -41,6 +41,9 @@ function grey() {
         var size1 = 110;
         textarea.setAttribute("name", "textarea");
         textarea.setAttribute("cols", size1);
+         if (i==2){
+            var e1 = "Event that already happened";
+            textarea.textContent=e1;}
         //blue part(white)
         var div_saveBtn = document.createElement("div");
         div_saveBtn.textContent = "                ";
