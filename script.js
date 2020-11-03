@@ -21,7 +21,7 @@ function save(i){
 function show(){
     if (localStorage.getItem("flag")=="true") {
         // alert("data in storage");    
-        for (let i = 0; i < 5; i++) {
+        for (let i = 0; i < 9; i++) {
             var dataToShow = localStorage.getItem("data"+i);
                 if (dataToShow!=null) {
                     document.getElementById("textarea"+i).textContent=dataToShow;
@@ -123,7 +123,7 @@ function Redpart() {
     var size1 = 110;
     textarea.setAttribute("name", "textarea");
     textarea.setAttribute("cols", size1);
-    // textarea.setAttribute("id","textarea"+i);
+    textarea.setAttribute("id","textarea"+3);
     var e2 = "Current hour";
     textarea.textContent = e2;
    
@@ -131,7 +131,7 @@ function Redpart() {
     var div_saveBtn = document.createElement("div");
     div_saveBtn.textContent = "                ";
     div_saveBtn.setAttribute("class", "saveBtn");
-    // div_saveBtn.setAttribute("onclick","save("+i+")");
+    div_saveBtn.setAttribute("onclick","save("+3+")");
    //blue button
     var div_description = document.createElement("button");
     div_description.setAttribute("class", "description");
@@ -154,7 +154,7 @@ function Redpart() {
 
 function greenpart() {
     // var todolist = document.getElementById("cc");//timelist;
-    for (var i = 0; i < 5; i++) {
+    for (var i = 4; i < 9; i++) {
         //whole content
         var div_time_block = document.createElement("div");
         div_time_block.setAttribute("class", "time-block");
@@ -175,12 +175,12 @@ function greenpart() {
         var size1 = 110;
         textarea.setAttribute("name", "textarea");
         textarea.setAttribute("cols", size1);
-        // textarea.setAttribute("id","textarea"+i);
+        textarea.setAttribute("id","textarea"+i);
         //blue part(white)
         var div_saveBtn = document.createElement("div");
         div_saveBtn.textContent = "                ";
         div_saveBtn.setAttribute("class", "saveBtn");
-        // div_saveBtn.setAttribute("onclick","save("+i+")");
+        div_saveBtn.setAttribute("onclick","save("+i+")");
         //blue button
         var div_description = document.createElement("button");
         div_description.setAttribute("class", "description");
