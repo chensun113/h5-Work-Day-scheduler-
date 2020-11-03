@@ -4,8 +4,8 @@ var t = document.querySelector("#currentDay");
 var t2 = moment().format('LLLL');
 t.textContent = t2;
 //grey part variables
-var rowtext = ["9AM  ", "10AM", "11AM"];
-var greentext = ["1PM", "2PM", "3PM", "4PM", "5PM"];
+var rowtext = ["9AM  ", "10AM", "11AM","1PM","1PM", "2PM", "3PM", "4PM", "5PM"];
+// var greentext = [];
 var todolist = document.getElementById("cc");//timelist;
 
 
@@ -165,7 +165,7 @@ function greenpart() {
         //1PM-5PM
         var div_row = document.createElement("div");
         div_row.setAttribute("class", "row");
-        var todo = greentext[i];
+        var todo = rowtext [i];
         div_row.textContent = todo;
 
         var div_past = document.createElement("div");
